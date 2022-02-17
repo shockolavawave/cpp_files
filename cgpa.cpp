@@ -75,8 +75,8 @@ int main(){
 			std::cout << "maximum marks  : ";
 			std::cin >> subs[i][j].max;
 			
-			//max should not be less than marks obtanied or not equal to 0
-			if(std::cin.fail() || subs[i][j].max < subs[i][j].marks || subs[i][j].marks == 0){
+			//max should not be less than marks obtanied
+			if(std::cin.fail() || subs[i][j].max < subs[i][j].marks){
 				std::cout << "Invalid input." << std::endl << "Exiting..." << std::endl;
 				_exit(0);
 			}
